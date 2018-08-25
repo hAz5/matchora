@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -82,5 +83,16 @@ class Match extends Model
     public function scopeGetDone($q)
     {
         return $q->where(self::RESULT, '!=', self::RESULT_NOT_DONE);
+    }
+
+    /**
+     * get All today Match
+     * @param \Eloquent $query
+     *
+     * @return mixed
+     */
+    public function scopeTodayMatch($query)
+    {
+        return $query->where(self::DATE, Carbon::today());
     }
 }
