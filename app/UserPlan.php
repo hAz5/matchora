@@ -31,5 +31,3 @@ class UserPlan extends Pivot
         return $this->belongsTo(Plan::class, self::PLAN_ID, Plan::ID);
     }
 }
-
-web
