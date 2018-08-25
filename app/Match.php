@@ -4,6 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Match
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getDone()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getNok()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getNotDone()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getOK()
+ * @mixin \Eloquent
+ */
 class Match extends Model
 {
     const ID = 'id';
@@ -27,7 +36,7 @@ class Match extends Model
 
     /**
      * get not done Match
-     * @param $q
+     * @param \Eloquent $q
      *
      * @return mixed
      */
@@ -39,7 +48,7 @@ class Match extends Model
     /**
      * get ok match
      *
-     * @param $q
+     * @param \Eloquent $q
      *
      * @return mixed
      */
@@ -51,7 +60,7 @@ class Match extends Model
     /**
      * get nok match
      *
-     * @param $q
+     * @param \Eloquent $q
      *
      * @return mixed
      */
@@ -63,7 +72,7 @@ class Match extends Model
     /**
      * get all done match
      *
-     * @param $q
+     * @param \Eloquent $q
      *
      * @return mixed
      */

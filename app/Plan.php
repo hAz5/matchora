@@ -4,6 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Plan
+ *
+ * @mixin \Eloquent
+ */
 class Plan extends Model
 {
     const ID = 'id';
