@@ -25,7 +25,8 @@ class HomeController extends Controller
     public function index()
     {
         $matches = Match::getNotDone()->take(10)->get();
+        $oldMatches = Match::getDone()->take(10)->get();
 
-        return view('home', compact('matches'));
+        return view('home', compact('matches', 'oldMatches'));
     }
 }

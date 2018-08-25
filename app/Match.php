@@ -19,6 +19,7 @@ class Match extends Model
     const HOST = 'host';
     const GUEST = 'guest';
     const LEAGUE = 'league';
+    const DATE = 'date';
     const DESCRIPTION = 'description';
     const RESULT = 'result';
     const RESULT_OK = 'OK';
@@ -33,6 +34,8 @@ class Match extends Model
     const TYPE_PRO = 'pro';
     const TYPE_FREE = 'free';
     const TYPE_VIP = 'vip';
+
+    public $timestamps = [self::DATE];
 
     /**
      * get not done Match

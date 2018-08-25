@@ -19,6 +19,7 @@ $factory->define(App\Match::class, function (Faker $faker) {
         Match::PREDICTION => array_random(['HOST', 'Guest' , 'Equal', 'Over 1.5', 'Over 2.5']),
         Match::HOST => array_random(['FBC', 'real madrid', 'chelsia', 'manchester', 'perspolis', 'esteghlal']),
         Match::GUEST => array_random(['FBC', 'real madrid', 'chelsia', 'manchester', 'perspolis', 'esteghlal']),
-        Match::DESCRIPTION => $faker->text
+        Match::DESCRIPTION => $faker->text,
+        Match::DATE => $faker->date() . ' ' . $faker->time()
     ];
 });

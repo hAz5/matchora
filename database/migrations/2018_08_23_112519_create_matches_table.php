@@ -34,6 +34,7 @@ class CreateMatchesTable extends Migration
                 Match::TYPE_FREE,
                 Match::TYPE_VIP
             ]);
+            $table->timestamp(Match::DATE);
             $table->timestamps();
 
         });
