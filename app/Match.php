@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getNotDone()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Match getOK()
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Match todayMatch()
  */
 class Match extends Model
 {
