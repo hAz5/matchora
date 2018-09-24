@@ -20,3 +20,7 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//admin
+Route::resource('admin/match', 'Admin\MatchController');
+Route::get('/plans', 'PlansController@index')->name('plans.index');
+Route::get('profile', 'ProfileController@profile')->name('user.profile');

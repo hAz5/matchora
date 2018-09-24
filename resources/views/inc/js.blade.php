@@ -13,10 +13,5 @@
 <script src="{{ url('plugins/moment/moment.js') }}"></script>
 
 
-<script src="{{ url('plugins/morris/morris.min.js') }}"></script>
-<script src="{{ url('plugins/raphael/raphael-min.js') }}"></script>
-<script src="{{ url('plugins/bootstrap-sweetalert/sweet-alert.min.js') }}"></script>
-<script src="{{ url('plugins/peity/jquery.peity.min.js') }}"></script>
 <script src="{{ url('js/jquery.core.js') }}"></script>
 <script src="{{ url('js/jquery.app.js') }}"></script>
-<script src="{{ url('pages/jquery.dashboard_2.js') }}"></script>

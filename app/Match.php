@@ -36,9 +36,11 @@ class Match extends Model
     const TYPE_PRO = 'pro';
     const TYPE_FREE = 'free';
     const TYPE_VIP = 'vip';
+    const RESULT_MATCH = 'result_match';
 
     public $timestamps = [self::DATE];
 
+    protected $guarded = [];
     /**
      * get not done Match
      * @param \Eloquent $q

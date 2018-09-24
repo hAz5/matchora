@@ -154,6 +154,7 @@ return [
         /*
          * Application Service Providers...
          */
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -210,6 +211,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Gateway' => \Larabookir\Gateway\Gateway::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
     ],
 
 ];

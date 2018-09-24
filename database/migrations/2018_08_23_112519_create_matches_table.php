@@ -35,6 +35,7 @@ class CreateMatchesTable extends Migration
                 Match::TYPE_VIP
             ]);
             $table->timestamp(Match::DATE);
+            $table->string(Match::RESULT_MATCH)->nullable();
             $table->timestamps();
 
         });
